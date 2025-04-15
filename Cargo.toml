@@ -1,0 +1,10 @@
+[package]
+name = "WebApp-Pulsador"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.20", features = ["csr"] }
+gloo-net = "0.5"
+wasm-bindgen-futures = "0.4"
+anyhow = "1.0.98"

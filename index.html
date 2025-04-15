@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control de Acceso</title>
+  <!-- Importa Bulma para los estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    /* Fondo degradado para toda la pantalla */
+    .hero.is-fullheight {
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      color: white;
+    }
+    /* Estilo personalizado para el botón central */
+    .door-button {
+      font-size: 2rem;
+      padding: 1.5rem 3rem;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff3860;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .door-button:hover {
+      background-color: #ff6b81;
+    }
+    .door-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor para la aplicación Yew -->
+  <div id="app"></div>
+  <!-- Importa el módulo JS generado al compilar a Wasm -->
+  <script type="module">
+    import init from "./pkg/webapp_mqtt.js";
+    init();
+  </script>
+</body>
+</html>

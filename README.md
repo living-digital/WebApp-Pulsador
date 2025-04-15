@@ -1,5 +1,3 @@
-Here is a basic template for a `README.md` file in English for your repository:
-
 ```markdown
 # WebApp-Pulsador
 

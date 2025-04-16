@@ -9,6 +9,7 @@ dependencies = [
  "anyhow",
  "gloo-net 0.5.0",
  "wasm-bindgen-futures",
+ "web-sys",
  "yew",
 ]
 
